@@ -1,6 +1,7 @@
 /**
  * (c) Copyright 2018 Patrick McEvoy
  */
+package mcev.hello;
 
 import org.junit.Assert;
 import org.junit.Test;

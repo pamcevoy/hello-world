@@ -1,6 +1,7 @@
 /**
  * (c) Copyright 2018 Patrick McEvoy
  */
+package mcev.hello;
 
 /**
  * A simple hello world program.
