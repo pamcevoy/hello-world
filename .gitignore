@@ -1,8 +1,19 @@
 # Compiled class file
 *.class
 
+# Gradle
+.gradle/
+
+# Maven packaged files
+target/
+
 # Log file
 *.log
+
+# Eclipse files
+.settings/
+.classpath
+.project
 
 # BlueJ files
 *.ctxt
@@ -10,9 +21,10 @@
 # Mobile Tools for Java (J2ME)
 .mtj.tmp/
 
-# Package Files #
+# Package Files
 *.jar
 *.war
+*.nar
 *.ear
 *.zip
 *.tar.gz
