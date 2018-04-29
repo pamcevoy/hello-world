@@ -1,5 +1,5 @@
-def show_greeting
+def main
   puts "Hello World"
 end
 
-show_greeting
+main
