@@ -1,0 +1,12 @@
+How to run the programs
+
+Java
+gradle run
+or
+java -classpath build/libs/hello-world-0.1.jar mcev.hello.HelloWorld
+
+Perl
+perl src/main/perl/hello_world.pl
+
+JavaScript
+node src/main/js/hello_world.js
