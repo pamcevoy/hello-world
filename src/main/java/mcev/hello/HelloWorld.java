@@ -7,16 +7,11 @@ package mcev.hello;
  * A simple hello world program.
  */
 public class HelloWorld {
+    /**
+     * Run the main program to print out "Hello World".
+     * @param args the command line arguments (ignored)
+     */
     public static void main(String[] args) {
-        HelloWorld app = new HelloWorld();
-        app.showMessage();
-    }
-
-    public void showMessage() {
-        System.out.println(getMessage());
-    }
-
-    public String getMessage() {
-        return "Hello World";
+        System.out.println("Hello World");
     }
 }

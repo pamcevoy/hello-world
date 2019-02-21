@@ -3,7 +3,6 @@
  */
 package mcev.hello;
 
-import org.junit.Assert;
 import org.junit.Test;
 
 /**
@@ -12,8 +11,7 @@ import org.junit.Test;
  */
 public class HelloWorldTest {
     @Test
-    public void testGetMessage() {
-        HelloWorld app = new HelloWorld();
-        Assert.assertEquals("Hello World", app.getMessage());
+    public void testMain() {
+        HelloWorld.main((String[])null);
     }
 }
