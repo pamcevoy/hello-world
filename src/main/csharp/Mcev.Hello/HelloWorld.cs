@@ -3,7 +3,7 @@
  */
 using System;
 
-namespace mcev.hello
+namespace Mcev.Hello
 {
     /// <summary>
     /// A program to print out "Hello World".
