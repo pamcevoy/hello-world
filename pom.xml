@@ -12,8 +12,9 @@
   <url>https://github.com/pamcevoy/hello-world</url>
 
   <properties>
-    <maven.compiler.source>11</maven.compiler.source>
-    <maven.compiler.target>11</maven.compiler.target>
+    <!-- 1.8 or 9 through 13 -->
+    <maven.compiler.source>12</maven.compiler.source>
+    <maven.compiler.target>12</maven.compiler.target>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
 
@@ -37,8 +38,8 @@
         <artifactId>maven-compiler-plugin</artifactId>
         <version>3.8.1</version> <!-- May 2019 -->
         <configuration>
-          <source>11</source>
-          <target>11</target>
+          <source>12</source> <!--  1.8 or 9 through 13 -->
+          <target>12</target>
         </configuration>
       </plugin>
 
@@ -80,7 +81,7 @@
         <configuration>
           <analysisCache>true</analysisCache> <!-- enable incremental analysis -->
           <linkXref>true</linkXref>
-          <targetJdk>1.8</targetJdk>
+          <targetJdk>12</targetJdk> <!-- 1.8 or 9 through 13 -->
         </configuration>
       </plugin>
 
