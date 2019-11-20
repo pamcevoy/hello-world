@@ -12,7 +12,7 @@ jobs:
     steps:
       - checkout # check out the code in the project directory
       - run: node src/main/js/hello_world.js
-  build_javascript:
+  build_perl:
     docker:
       - image: circleci/node:4.8.2 # linux should have perl, right?
     steps:
