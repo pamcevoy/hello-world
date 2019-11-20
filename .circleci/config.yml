@@ -1,11 +1,11 @@
 version: 2.1
 jobs:
-  #build_java:
-  #  docker:
-  #    - image: circleci/openjdk:11 # https://hub.docker.com/r/circleci/openjdk, 12 is not available
-  #  steps:
-  #    - checkout
-  #    - run: java mcev.hello.HelloWorld
+  build_java:
+    docker:
+      - image: circleci/openjdk:11 # https://hub.docker.com/r/circleci/openjdk, 12 is not available
+    steps:
+      - checkout
+      - run: echo "hello world"
   build_javascript:
     docker:
       - image: circleci/node:4.8.2 # the primary container, where your job's commands are run
@@ -28,7 +28,7 @@ workflows:
   version: 2
   build_all:
     jobs:
-      #- build_java
+      - build_java
       - build_javascript
       - build_perl
       - build_ruby
