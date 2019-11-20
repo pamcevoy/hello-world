@@ -14,7 +14,7 @@ jobs:
             - ~/.m2
           key: hello_world-{{ checksum "pom.xml" }}
       - run: mvn package
-      - run: java mcev.hello.HelloWorld
+      - run: java -classpath target/classes mcev.hello.HelloWorld
   build_javascript:
     docker:
       - image: circleci/node:4.8.2 # the primary container, where your job's commands are run
