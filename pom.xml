@@ -6,7 +6,7 @@
   <groupId>mcev</groupId>
   <artifactId>hello-world</artifactId>
   <packaging>jar</packaging>
-  <version>1.0-SNAPSHOT</version>
+  <version>1.0</version>
 
   <name>hello-world</name>
   <url>https://github.com/pamcevoy/hello-world</url>
