@@ -7,11 +7,17 @@ jobs:
   #    - checkout
   #    - run: java mcev.hello.HelloWorld
   build_javascript:
-    docker: 
+    docker:
       - image: circleci/node:4.8.2 # the primary container, where your job's commands are run
     steps:
       - checkout # check out the code in the project directory
       - run: node src/main/js/hello_world.js
+  build_javascript:
+    docker:
+      - image: circleci/node:4.8.2 # linux should have perl, right?
+    steps:
+      - checkout
+      - run: perl src/main/perl/hello_world.pl
   build_ruby:
     docker:
       - image: circleci/ruby:2.4.1
@@ -24,4 +30,5 @@ workflows:
     jobs:
       #- build_java
       - build_javascript
+      - build_perl
       - build_ruby
