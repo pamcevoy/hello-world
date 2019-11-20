@@ -3,7 +3,7 @@ jobs:
   build_java:
     working_directory: ~/hello_world
     docker:
-      - image: circleci/openjdk:11 # https://hub.docker.com/r/circleci/openjdk, 12 is not available
+      - image: circleci/openjdk:13.0-buster # https://hub.docker.com/r/circleci/openjdk, 12 is not available
     steps:
       - checkout
       - restore_cache:
