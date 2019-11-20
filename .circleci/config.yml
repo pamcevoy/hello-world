@@ -1,20 +1,27 @@
 version: 2.1
 jobs:
-  build:
-    docker: 
-      - image: circleci/node:4.8.2 # the primary container, where your job's commands are run
-    steps:
-      - checkout # check out the code in the project directory
-      - run: node src/main/js/hello_world.js
-  build:
-    docker:
-      - image: circleci/ruby:2.4.1
-    steps:
-      - checkout
-      - run: ruby src/main/ruby/hello_world.rb
-  build:
+  build_java:
     docker:
       - image: circleci/openjdk:11 # https://hub.docker.com/r/circleci/openjdk, 12 is not available
     steps:
       - checkout
       - run: java mcev.hello.HelloWorld
+  build_javascript:
+    docker: 
+      - image: circleci/node:4.8.2 # the primary container, where your job's commands are run
+    steps:
+      - checkout # check out the code in the project directory
+      - run: node src/main/js/hello_world.js
+  build_ruby:
+    docker:
+      - image: circleci/ruby:2.4.1
+    steps:
+      - checkout
+      - run: ruby src/main/ruby/hello_world.rb
+workflows:
+  version: 2
+  one_and_two:
+    jobs:
+      - build_java
+      - build_javascript
+      - build_ruby
