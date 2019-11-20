@@ -15,7 +15,7 @@ namespace Mcev.Hello
         /// </summary>
         public void main(string[] args)
         {
-            Console.WriteLine("Hello World");
+            Console.WriteLine("Hello World from C#");
         }
     }
 }

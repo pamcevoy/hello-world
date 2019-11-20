@@ -9,7 +9,7 @@ use warnings;
 
 # program
 sub _Main() {
-    print "Hello World!\n";
+    print "Hello World from Perl\n";
 }
 
 _Main();
